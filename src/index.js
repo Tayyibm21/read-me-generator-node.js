@@ -32,6 +32,23 @@ const generateTitle = (answers) => {
 
 };
 
+const generateTableOfContents = (answers) => {};
+
+const generateDescription = (answers) => {};
+
+const generateInstallation = (answers) => {};
+
+const generateUsage = (answers) => {};
+
+const GenerateTests = (answers) => {};
+
+const GenerateContributing = (answers) => {};
+
+const generateLicense = (answers) => {};
+const generateReadme = (answers) => {
+    
+};
+
 
 const init = async () => {
 //prompt questions using inquirer
