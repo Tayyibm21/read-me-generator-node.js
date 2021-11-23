@@ -28,90 +28,85 @@ const questions = [
 ];
 
 const generateTitle = (answers) => {
-  return '#TITLE ![MIT] (https://img.shields.io/static/v1?label=MIT&message=License&color=blue)';
-
+  return `# TITLE ![MIT](https://img.shields.io/static/v1?label=MIT&message=License&color=green)`;
 };
 
 const generateTableOfContents = (answers) => {
-  return  ` ## Table of Contents
-    
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Contributing](#contributing)
-- [License](#license)`
+  return `## Table of Contents
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Contributing](#contributing)
+  - [License](#license)`;
 };
-
-
 
 const generateDescription = (answers) => {
-  return  `## Description
-    
-ADD TEXT HERE`
+  return `## Description
+  
+  ADD TEXT HERE`;
 };
-
-
 
 const generateInstallation = (answers) => {
   return `## Installation
-    
+  
   Run the following script to install the packages required for the application:
   
   \`\`\`
   ADD TEXT HERE
-  \`\`\``
+  \`\`\``;
 };
 
 const generateUsage = (answers) => {
-  return` ## Usage
-    
+  return `## Usage
+  
   To use the application run the following script:
   
   \`\`\`
   ADD TEXT HERE
-  \`\`\``
+  \`\`\``;
 };
 
-const GenerateTests = (answers) => {
-  return`## Tests
-    
+const generateTests = (answers) => {
+  return `## Tests
+  
   To use the application run the following script:
   
   \`\`\`
   ADD TEXT HERE
-  \`\`\``
+  \`\`\``;
 };
 
-const GenerateContributing = (answers) => {
+const generateContributing = (answers) => {
   return `## Contributing
-    
-  ADD TEXT HERE`
+  
+  ADD TEXT HERE`;
 };
 
 const generateLicense = (answers) => {
-  return ` ## License
-    
-  ADD TEXT HERE`
+  return `## License
+  
+  ADD TEXT HERE`;
 };
 
 const generateReadme = (answers) => {
-    return ${generateTitle(answers)}
+  return `${generateTitle(answers)}
 
-    ${generateTableOfContents(answer)}
- 
-    ${generateDescription(answers)}
-    
-    ${generateInstallation(answers)}
-    
-   ${generateUsage(answers)}
-    
-    ${GenerateTests(answers)}
-    
-   ${GenerateContributing(answers)}
-    
-   ${(answers)}
-    ;
+  ${generateTableOfContents(answers)}
+  
+  ${generateDescription(answers)}
+  
+  ${generateInstallation(answers)}
+  
+  ${generateUsage(answers)}
+  
+  ${generateTests(answers)}
+  
+  ${generateContributing(answers)}
+  
+  ${generateLicense(answers)}
+  `;
 };
 
 const writeToFile = (filePath, data) => {
@@ -123,10 +118,12 @@ const writeToFile = (filePath, data) => {
 };
 
 const init = async () => {
+  // prompt the questions using inquirer
+  // generate readme based on answers
+  const readme = generateReadme();
 
-const readme = generateReadme();
-
-console.log(readme);
+  // write generated readme to a file
+  writeToFile('GENERATED_README.md', readme);
 };
 
 init();
