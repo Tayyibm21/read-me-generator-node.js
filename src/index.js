@@ -1,4 +1,6 @@
 // declare questions
+const inquirer = require('inquirer')
+
 const questions = [
     {
         
@@ -38,7 +40,7 @@ const questions = [
         type: 'input',
         name: 'use application ',
         message: 'How do i use the application?',
-        
+
       },
       
 ];
@@ -134,6 +136,8 @@ const writeToFile = (filePath, data) => {
 };
 
 const init = async () => {
+  const answers = await inquirer.prompt(questions);
+  console.log(answers);
   // prompt the questions using inquirer
   // generate readme based on answers
   const readme = generateReadme();
