@@ -1,28 +1,44 @@
 // declare questions
 const questions = [
     {
-        title: "what is the title of your project?",
+        
+  type: 'input',
+  name: 'Project title',
+  message: 'what is the title of your project?',
    
       },
       {
-        title: "what is the description?",
-     
+          type: 'input',
+          name: 'Description',
+          message: 'what is the description?',
+
       },
       {
-        title: "Do you have an installation script?",
-     
+
+        type: 'input',
+        name: 'installation',
+        message: 'Do you have an installation script?',
+
       },
       {
-        title: "what is the installation script?",
- 
+
+        type: 'input',
+        name: 'installation script',
+        message: 'what is the installation script?',
+
       },
       {
-        title: "Do you have an application?",
-   
+        
+        type: 'input',
+        name: 'application ',
+        message: 'Do you have an application?',
       },
       {
-        title: "How do i use the application?",
- 
+
+        type: 'input',
+        name: 'use application ',
+        message: 'How do i use the application?',
+        
       },
       
 ];
@@ -127,3 +143,6 @@ const init = async () => {
 };
 
 init();
+
+
+
