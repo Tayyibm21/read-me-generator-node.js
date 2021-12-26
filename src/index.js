@@ -1,3 +1,6 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+
 // declare questions
 const inquirer = require('inquirer')
 
