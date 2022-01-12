@@ -46,6 +46,18 @@ const questions = [
       
 ];
 
+ // prompt the questions using inquirer
+ const start = async () => {
+  const answers = await inquirer.prompt(questions);
+  console.log(answers);
+
+  // generate readme based on answers
+  const readme = generateReadme();
+
+  // write generated readme to a file
+  writeToFile('GENERATED_README.md', readme);
+};
+
 const generateTitle = (answers) => {
   return `# TITLE ![MIT](https://img.shields.io/static/v1?label=MIT&message=License&color=green)`;
 };
@@ -150,18 +162,6 @@ const writeToFile = (filePath, data) => {
   } catch (error) {
     console.log(error.message);
   }
-};
-
-  // prompt the questions using inquirer
-const start = async () => {
-  const answers = await inquirer.prompt(questions);
-  console.log(answers);
-
-  // generate readme based on answers
-  const readme = generateReadme();
-
-  // write generated readme to a file
-  writeToFile('GENERATED_README.md', readme);
 };
 
 start();
