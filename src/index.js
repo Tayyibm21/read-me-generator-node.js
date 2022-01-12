@@ -2,8 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 // declare questions
-const inquirer = require('inquirer')
-
 const questions = [
     {
         
@@ -138,7 +136,7 @@ const writeToFile = (filePath, data) => {
   }
 };
 
-const init = async () => {
+const start = async () => {
   const answers = await inquirer.prompt(questions);
   console.log(answers);
   // prompt the questions using inquirer
