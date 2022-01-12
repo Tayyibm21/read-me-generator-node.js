@@ -63,50 +63,66 @@ const generateTableOfContents = (answers) => {
 
 const generateDescription = (answers) => {
   return `## Description
+
+  <a id="description"></a>
   
-  ADD TEXT HERE`;
+  Project description;
+
+  ${answers.description}`;
 };
 
 const generateInstallation = (answers) => {
   return `## Installation
+
+  <a id="installation"></a>
   
-  Run the following script to install the packages required for the application:
+  Run the following script to install the packages required to use this application:
   
   \`\`\`
-  ADD TEXT HERE
+  ${answers.installation}
   \`\`\``;
 };
 
 const generateUsage = (answers) => {
   return `## Usage
+
+  <a id="usage"></a>
   
   To use the application run the following script:
   
   \`\`\`
-  ADD TEXT HERE
+  ${answers.usage}
   \`\`\``;
 };
 
 const generateTests = (answers) => {
   return `## Tests
+
+  <a id="test"></a>
   
   To use the application run the following script:
   
   \`\`\`
-  ADD TEXT HERE
+  ${answers.test}
   \`\`\``;
 };
 
 const generateContributing = (answers) => {
   return `## Contributing
+
+
+
+  <a id="contributing"></a>
   
-  ADD TEXT HERE`;
+  ${answers.contribution}`;
 };
 
 const generateLicense = (answers) => {
   return `## License
+
+  <a id="license"></a>
   
-  ADD TEXT HERE`;
+  ${answers.license}`;
 };
 
 const generateReadme = (answers) => {
