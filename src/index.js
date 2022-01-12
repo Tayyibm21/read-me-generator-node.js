@@ -152,10 +152,11 @@ const writeToFile = (filePath, data) => {
   }
 };
 
+  // prompt the questions using inquirer
 const start = async () => {
   const answers = await inquirer.prompt(questions);
   console.log(answers);
-  // prompt the questions using inquirer
+
   // generate readme based on answers
   const readme = generateReadme();
 
@@ -163,7 +164,7 @@ const start = async () => {
   writeToFile('GENERATED_README.md', readme);
 };
 
-init();
+start();
 
 
 
