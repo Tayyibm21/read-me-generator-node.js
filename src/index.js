@@ -61,24 +61,18 @@ const start = async () => {
 };
 
 const generateTitle = (answers) => {
-  return `# ${answers.title} ![MIT](https://img.shields.io/static/v1?label=${answers.license}&message=License&color=orange)`;
+  return `# ${answers.title} ![MIT](https://img.shields.io/static/v1?label=${answers.license}&message=License&color=blue)`;
 };
 
 const generateTableOfContents = () => {
   return `## Table of Contents
    
   1. [Description](#description) 
-      <br>
   2. [Installation](#installation) 
-      <br>
   3. [Usage](#usage)
-      <br>
   4. [Test](#test) 
-      <br>
   5. [Contributing](#contributing) 
-      <br>
   6. [License](#license) 
-      <br>
   7. [contacts](#contacts)`;
 };
 
@@ -138,7 +132,7 @@ const generateContributing = (answers) => {
 };
 
 const generateLicense = (answers) => {
-  
+
   return `## License
   <a id="license"></a>
   

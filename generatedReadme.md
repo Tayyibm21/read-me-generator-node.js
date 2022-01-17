@@ -1,4 +1,4 @@
-# readme generator ![MIT](https://img.shields.io/static/v1?label=MIT&message=License&color=blue)
+# Readme generator ![MIT](https://img.shields.io/static/v1?label=MIT&message=License&color=blue)
  ## Table of Contents
    
   1. [Description](#description) 
@@ -14,7 +14,7 @@
   
    Description for the project:
     ```
-    generates readme file depending on user input
+    user is able to create a readme file by inputing information
     ``` 
  
  ## Installation
@@ -23,7 +23,7 @@
    Run the following script to install the packages required for the application:
   
    ```
-   npm run start
+   install inquirer
    ```
  ## Usage
    <a id="usage"></a>
@@ -31,7 +31,7 @@
    To use the application run the following script:
   
    ```
-   by using npm and inquirer to navigate through the application
+   you need to use npm and inquirer to navigate through the application
    ```
  ## Test
    <a id="test"></a>
@@ -39,7 +39,7 @@
    To use the application run the following script:
   
    ```
-   unable to test the application for now
+   currently not able to test application but maybe soon
    ```
  ## Contributing
    
@@ -47,7 +47,7 @@
    To contribute to the application you could:
    
    ```
-   by going on to my github repository
+   by pushing chages onto my github repository
    ```
  ## License
   <a id="license"></a>
